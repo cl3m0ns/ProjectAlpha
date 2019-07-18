@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 # Declare member variables here
-export (int) var speed = 100
+export (int) var speed = 75
 
 var velocity = Vector2()
 var lastVelocity = Vector2(0,0)
