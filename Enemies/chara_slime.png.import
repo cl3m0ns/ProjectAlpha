@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chara_rat.png-b84400f8949baff8adf299166fc71c68.stex"
+path="res://.import/chara_slime.png-69d2fac1993f7afe35775d154e2dd760.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Enemies/chara_rat.png"
-dest_files=[ "res://.import/chara_rat.png-b84400f8949baff8adf299166fc71c68.stex" ]
+source_file="res://Enemies/chara_slime.png"
+dest_files=[ "res://.import/chara_slime.png-69d2fac1993f7afe35775d154e2dd760.stex" ]
 
 [params]
 

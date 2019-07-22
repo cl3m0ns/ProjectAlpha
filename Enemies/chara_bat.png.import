@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chara_bat.png-a0485c8b017a4ce74f08fb46ade4edcd.stex"
+path="res://.import/chara_bat.png-1a5ad1d1ebe8bdacc8663482e6dd956a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Enemies/chara_bat.png"
-dest_files=[ "res://.import/chara_bat.png-a0485c8b017a4ce74f08fb46ade4edcd.stex" ]
+source_file="res://Enemies/chara_bat.png"
+dest_files=[ "res://.import/chara_bat.png-1a5ad1d1ebe8bdacc8663482e6dd956a.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chara_slime.png-b8ac3448c6d3eafe6b32dbe311303d4b.stex"
+path="res://.import/chara_goblin.png-77378d01944e2ad9fda186ccdee5b3f5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Enemies/chara_slime.png"
-dest_files=[ "res://.import/chara_slime.png-b8ac3448c6d3eafe6b32dbe311303d4b.stex" ]
+source_file="res://Enemies/chara_goblin.png"
+dest_files=[ "res://.import/chara_goblin.png-77378d01944e2ad9fda186ccdee5b3f5.stex" ]
 
 [params]
 

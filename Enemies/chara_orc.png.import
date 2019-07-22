@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chara_spider.png-bc4f5379e3877c552bfbd22684624b37.stex"
+path="res://.import/chara_orc.png-100eb399022dbe09c0103009392843de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Enemies/chara_spider.png"
-dest_files=[ "res://.import/chara_spider.png-bc4f5379e3877c552bfbd22684624b37.stex" ]
+source_file="res://Enemies/chara_orc.png"
+dest_files=[ "res://.import/chara_orc.png-100eb399022dbe09c0103009392843de.stex" ]
 
 [params]
 
