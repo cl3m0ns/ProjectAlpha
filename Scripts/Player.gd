@@ -89,7 +89,7 @@ func update_attack_sprite():
 #########################################################
 func idle_state():
 	$AnimationPlayer.play("Idle");
-	set_last_animation_and_velocity()	
+	set_last_animation_and_velocity()
 #########################################################
 
 
