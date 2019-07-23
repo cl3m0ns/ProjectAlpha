@@ -6,7 +6,8 @@
 
 [sub_resource type="Animation" id=1]
 resource_name = "Walk"
-length = 0.4
+length = 0.8
+loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -14,7 +15,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6 ),
 "transitions": PoolRealArray( 1, 1, 1, 1 ),
 "update": 1,
 "values": [ 12, 13, 14, 15 ]
@@ -38,12 +39,13 @@ tracks/0/keys = {
 
 [node name="Slime" index="0" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
+wander_time = 1.5
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 3 )
 vframes = 11
 hframes = 4
-frame = 15
+frame = 12
 
 [node name="CollisionShape2D" parent="." index="1"]
 position = Vector2( 0.0565605, 0.565617 )
