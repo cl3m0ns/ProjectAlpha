@@ -100,19 +100,18 @@ func idle_state():
 func walk_state():
 	get_movement()
 	update_walk_sprite()
-	move_and_slide(velocity)
+	move_and_slide(velocity, Vector2(0, 0))
 
 func get_movement():
 	var tempVelocity = Vector2()
-	if Input.is_action_pressed('right'):
-		tempVelocity.x += 1
-	if Input.is_action_pressed('left'):
-		tempVelocity.x -= 1
-	if Input.is_action_pressed('down'):
-		tempVelocity.y += 1
-	if Input.is_action_pressed('up'):
-		tempVelocity.y -= 1
-	velocity = tempVelocity.normalized() * speed
+	var left = Input.is_action_pressed('left')
+	var right = Input.is_action_pressed('right')
+	var down = Input.is_action_pressed('down')
+	var up = Input.is_action_pressed('up')
+	
+	velocity.x = -int(left) + int(right)
+	velocity.y = -int(up) + int(down)
+	velocity = velocity.normalized() * speed
 
 func update_walk_sprite():
 	var movingHorizontal = false
