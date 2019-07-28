@@ -21,7 +21,7 @@ config/icon="res://icon.png"
 
 [autoload]
 
-viewport="*res://Scripts/viewport.gd"
+GLOBAL="*res://Scripts/global.gd"
 
 [display]
 

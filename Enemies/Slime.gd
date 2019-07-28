@@ -48,14 +48,6 @@ func _physics_process(delta):
 func idle_state():
 	$AnimationPlayer.play("idle")
 	set_last_animation_and_velocity()
-	print(idle_time_timer.time_left)
-	if idle_time_over:
-		randomize() #ensures the numbers are randomized each time the function is run
-		var nextState = [states.roam, states.idle, states.idle, states.idle]
-		NEXT_STATE = nextState[randi() % nextState.size()]
-		idle_time_over = false
-	elif idle_time_timer.is_stopped():
-		idle_time_timer.start()
 #########################################################
 
 
@@ -80,7 +72,6 @@ func hurt_state():
 ###### ROAM STATE #######################################
 #########################################################
 func roam_state():
-	wander_time_timer.start()
 	get_movement()
 	update_roam_sprite()
 	move_and_slide(velocity)
