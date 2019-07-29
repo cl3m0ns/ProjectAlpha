@@ -144,3 +144,13 @@ anims/Idle = SubResource( 5 )
 anims/Walk = SubResource( 6 )
 "anims/Walk Down" = SubResource( 7 )
 "anims/Walk Up" = SubResource( 8 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+smoothing_enabled = true
+drag_margin_left = 0.35
+drag_margin_top = 0.35
+drag_margin_right = 0.35
+drag_margin_bottom = 0.35
+editor_draw_limits = true
+editor_draw_drag_margin = true
