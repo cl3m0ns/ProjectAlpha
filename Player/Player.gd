@@ -25,10 +25,8 @@ func _physics_process(delta):
 	STATE = NEXT_STATE
 	if STATE == states.idle:
 		idle_state()
-		get_inputs()
 	elif STATE == states.walk:
 		walk_state()
-		get_inputs()
 	elif STATE == states.attack:
 		attack_state()
 
@@ -90,6 +88,8 @@ func update_attack_sprite():
 func idle_state():
 	$AnimationPlayer.play("Idle");
 	set_last_animation_and_velocity()
+	
+	get_inputs()
 #########################################################
 
 
@@ -100,7 +100,9 @@ func idle_state():
 func walk_state():
 	get_movement()
 	update_walk_sprite()
-	move_and_slide(velocity, Vector2(0, 0))
+	move_and_slide(velocity, Vector2.ZERO)
+	
+	get_inputs()
 
 func get_movement():
 	var tempVelocity = Vector2()
